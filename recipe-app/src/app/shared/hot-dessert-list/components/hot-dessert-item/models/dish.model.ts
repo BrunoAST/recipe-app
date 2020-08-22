@@ -3,7 +3,7 @@ export class DishModel {
         public dishId: number,
         public dishName: string,
         public countryId: number,
-        public contryName: string,
+        public countryName: string,
         public dishPhoto: string
     ) { }
 }

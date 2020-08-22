@@ -1,0 +1,9 @@
+.container {
+    @media (min-width: 1200px) {
+        max-width: 90vw;
+    }
+}
+
+.dessert-list {
+    justify-content: center;
+}

@@ -3,6 +3,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { DishModel } from './components/hot-dessert-item/models/dish.model';
+import { HotDissertHttpService } from './services/hot-dissert-http.service';
 
 @Component({
     selector: 'rcp-hot-dessert-list',
@@ -10,24 +11,11 @@ import { DishModel } from './components/hot-dessert-item/models/dish.model';
     styleUrls: ['./view/hot-dessert-list.component.scss']
 })
 export class HotDessertListComponent implements OnInit, OnDestroy {
-    dishList: DishModel[]  = [
-        {
-            country: 'USA',
-            name: 'Pizza'
-        },
-        {
-            country: 'Mexico',
-            name: 'Taco'
-        },
-        {
-            country: 'India',
-            name: 'Gelatto'
-        }
-    ];
+    dishList: DishModel[]  = [];
 
     private _subscription$ = new Subscription();
 
-    constructor() { }
+    constructor(private _hotDissertHttpService: HotDissertHttpService) { }
 
     ngOnInit(): void {
         this._getDishes();
@@ -38,6 +26,8 @@ export class HotDessertListComponent implements OnInit, OnDestroy {
     }
 
     private _getDishes(): void {
-
+        this._hotDissertHttpService
+            .getDishes()
+            .subscribe((res: DishModel[]) => this.dishList = res);
     }
 }

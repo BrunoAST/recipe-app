@@ -8,11 +8,11 @@ import { APIRoutes } from 'src/app/routes/api.routes';
 
 @Injectable()
 export class HotDissertHttpService {
-    private _dishesRoute = `${APIRoutes}`;
+    private _dishesRoute = `${APIRoutes}/foods`;
 
     constructor(private _http: HttpClient) { }
 
     getDishes(): Observable<DishModel[]> {
-        return this._http.get<DishModel[]>(this._dishesRoute);
+        return this._http.get<DishModel[]>('http://fe726bb94d89.ngrok.io/api/foods');
     }
 }
