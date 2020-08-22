@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { RecipeMenuCardModel } from './models/recipe-menu-card.model';
 
 @Component({
   selector: 'rcp-menu-card',
@@ -8,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MenuCardComponent implements OnInit {
 
   @Input() title: string;
-  @Input() recipes: any[];
+  @Input() recipes: RecipeMenuCardModel[];
 
   constructor() { }
 

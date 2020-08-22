@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RecipeMenuCardModel } from 'src/app/shared/menu-card/models/recipe-menu-card.model';
 
 @Component({
   selector: 'rcp-home',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view/home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+
 
   constructor() { }
 

@@ -1,3 +1,33 @@
+.menu-card{
+    width: 400px;
+    border-radius: 24px;
+}
 .title{
     color: #fff;
+}
+
+.recipe-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recipe-ingredients {
+    color: #fff;
+    font-weight: 600;
+}
+
+.recipe-price {
+    color: #18190E;
+    font-weight: 600;
+}
+
+.recipe-name {
+    color:  #18190E;
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+.recipe {
+    padding: 10px 0px;
 }
