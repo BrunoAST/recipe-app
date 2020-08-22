@@ -3,8 +3,8 @@ import { ToolbarAnimationsService } from './services/toolbar-animations.service'
 
 @Component({
   selector: 'rcp-toolbar',
-  templateUrl: './toolbar.component.html',
-  styleUrls: ['./toolbar.component.scss'],
+  templateUrl: './view/toolbar.component.html',
+  styleUrls: ['./view/toolbar.component.scss', './view/toolbar-animations.scss'],
   providers: [ToolbarAnimationsService]
 })
 export class ToolbarComponent implements OnInit {
