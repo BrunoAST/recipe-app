@@ -1,23 +1,25 @@
+@import './variables/color';
+
 .primary-color {
-    background-color: #A2DE96;
+    background-color: $primary-color;
 }
 
 .secondary-color {
-    background-color: #BAE3AB;
+    background-color: $secondary-color;
 }
 
 .background-color {
-    background-color: #F5F5F3;
+    background-color: $background-color;
 }
 
 .font-primary {
-    color: #19193D;
+    color: $font-primary;
 }
 
 .font-secondary {
-    color: #A3DC98;
+    color: $font-secondary;
 }
 
 .font-alt {
-    color: #B0B5AF;
+    color: $font-alt;
 }
