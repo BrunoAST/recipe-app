@@ -1,0 +1,55 @@
+@import 'src/styles/variables/color';
+
+@mixin food-description-font-size {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container-item {
+    max-width: 300px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin: 80px 30px 0 30px;
+}
+
+.container-item:hover {
+    img {
+        transform: scale(1.05);
+    }
+}
+
+.food-image {
+    margin-right: -15px;
+    z-index: 2;
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid $font-primary;
+        box-shadow: 0 0 0 5px $secondary-color;
+        transition: 200ms ease-in;
+    }
+}
+
+.food-description {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 200px;
+    padding: 12px 12px 12px 32px;
+    height: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dish-name {
+    @include food-description-font-size;
+    color: $font-primary;
+}
+
+.country {
+    @include food-description-font-size;
+    color: $secondary-color;
+}

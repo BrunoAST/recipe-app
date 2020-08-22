@@ -1,3 +1,5 @@
-<div class="">
-
+<div class="row">
+    <ng-container *ngFor="let dish of dishList">
+        <rcp-hot-dessert-item [dish]="dish"></rcp-hot-dessert-item>
+    </ng-container>
 </div>
