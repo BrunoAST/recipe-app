@@ -18,7 +18,7 @@
     "component-selector": [
       true,
       "element",
-      "app",
+      "rcp",
       "kebab-case"
     ],
     "import-blacklist": [
