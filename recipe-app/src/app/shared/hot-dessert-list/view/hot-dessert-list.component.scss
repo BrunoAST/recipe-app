@@ -1,0 +1,14 @@
+@import 'src/styles/variables/color';
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $font-primary;
+}
+
+@media (max-width: 959px) {
+    h3 {
+        justify-content: center;
+    }
+}
