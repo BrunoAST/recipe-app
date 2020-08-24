@@ -20,7 +20,9 @@ nav {
     align-items: center;
 }
 
-a, .logo, .menu-mobile {
+a,
+.logo,
+.menu-mobile {
     cursor: pointer;
 }
 
@@ -98,7 +100,7 @@ a {
         width: 100%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        background-color: #fff;
+        background-color: $background-color;
         z-index: 99;
     }
 
